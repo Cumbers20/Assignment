@@ -16,7 +16,7 @@ header {
 }
 
 #profile img {
-    border-radius: 50%;
+    border-radius: 100%;
     width: 512px; /* Replace with natural width */
     height: 512px; /* Replace with natural height */
 }
@@ -65,4 +65,55 @@ a:hover {
 
 #date-time p {
     margin: 10px 0;
+}
+
+/* Media Queries */
+
+/* Tablet styles */
+@media only screen and (max-width: 768px) {
+    #profile img {
+        width: 256px; /* Adjust as needed */
+        height: 256px; /* Adjust as needed */
+    }
+
+    main {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    ul li, a {
+        padding: 8px;
+        margin: 4px 0;
+    }
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 480px) {
+    #profile img {
+        width: 128px; /* Adjust as needed */
+        height: 128px; /* Adjust as needed */
+    }
+
+    main {
+        padding: 10px;
+        max-width: 95%;
+    }
+
+    header {
+        margin: 10px 0;
+    }
+
+    section {
+        margin: 10px 0;
+    }
+
+    h2 {
+        font-size: 1.5em; /* Adjust as needed */
+    }
+
+    ul li, a {
+        padding: 6px;
+        margin: 3px 0;
+        font-size: 0.9em; /* Adjust as needed */
+    }
 }
